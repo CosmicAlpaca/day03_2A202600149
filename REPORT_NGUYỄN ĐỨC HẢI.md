@@ -1,14 +1,14 @@
 # Individual Report: Lab 3 - Chatbot vs ReAct Agent
 
-- **Student Name**: [Your Name Here]
-- **Student ID**: [Your ID Here]
-- **Date**: 2025-07-14
+- **Student Name**: NGUYỄN ĐỨC HẢI
+- **Student ID**: 2A202600149
+- **Date**: 2026-06-04
 
 ---
 
 ## I. Technical Contribution (15 Points)
 
-*Mô tả đóng góp cụ thể vào codebase của dự án NutriChef Agent.*
+*Mô tả đóng góp cụ thể vào codebase của dự án*
 
 - **Modules Implemented**:
   - `backend/tools.py` — Toàn bộ logic tool: `calculate_nutrition`, `check_nutrition_targets`, `calculate_cost`, `get_meal_suggestions`, `generate_weekly_menu`, và `dispatch_tool` dispatcher.
@@ -84,6 +84,3 @@ Observation từ `calculate_nutrition` giúp agent phát hiện ngay ngày Thứ
 - **Performance**: Xây dựng **Vector DB (ChromaDB/Pinecone)** cho tool retrieval khi số tool vượt 20+: thay vì đưa toàn bộ `TOOL_SCHEMAS` vào context mỗi lần, chỉ retrieve top-k tool liên quan theo cosine similarity với query. Giảm ~40% token mỗi lần gọi LLM. Thêm caching layer cho `calculate_nutrition` vì cùng một bộ nguyên liệu sẽ cho cùng kết quả.
 
 ---
-
-> [!NOTE]
-> Nộp báo cáo bằng cách đổi tên file thành `REPORT_[TÊN_BẠN].md` và đặt vào thư mục `report/individual_reports/`.
